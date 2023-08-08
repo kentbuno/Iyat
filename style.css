@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #222;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.message {
+  width: 80%;
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+input {
+  margin-block: 1rem;
+  font-size: 1.5em;
+  padding-block: 1rem;
+  text-align: center;
+  font-family: inherit;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding-block: 1rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.hidden {
+  display: none;
+  pointer-events: none;
+}
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 40px;
+}
+
+span {
+  font-size: 40px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.invalid p {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.enter {
+  background-color: green;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.invalid {
+  width: 80%;
+}
+
+.retry {
+  background-color: red;
+  color: white;
+  font-size: 1.75em;
+  padding: 1rem 10rem;
+}
+
+button {
+  transition: all 500ms ease;
+  margin-top: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
