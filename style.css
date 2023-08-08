@@ -6,8 +6,9 @@
 
 body {
   min-height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-family: "Poppins", sans-serif;
   background-color: #222;
@@ -104,7 +105,7 @@ span {
   background-color: red;
   color: white;
   font-size: 1.75em;
-  padding: 1rem 10rem;
+  padding: 1rem 5rem;
 }
 
 button {
